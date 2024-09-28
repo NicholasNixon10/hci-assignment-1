@@ -7,20 +7,22 @@
         body{
             display: grid;
             gap: 0px;
+            margin: 0;
+            background-color: aquamarine;
         }
         .icon{
-
-            margin-left: 30%;
             color: white;
             padding: 20px;
-            
+            width:150px;
+            height:120px;
         }
         .header{
-            height: 45vh;
+            height: auto;
             width:100%;
             margin: 0px;
-            
-            background-color: black;
+            border-bottom: solid 5px;
+            border-color: #002925;
+            background-color: #005950;
         }
         *{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -28,11 +30,10 @@
         .info{
             color: white;
             font-size: x-large;
-            
+            text-align: center;
+            margin: 30px 200px 30px 200px;
         }
-        .Title{
-            float: right;
-        }
+
         .Signature{
             width: 100%;
             height: 130px;
@@ -57,36 +58,72 @@
         .foot{
             margin-top: 30px;
             width: 100%;
-            height:30vh;
-            background-color: black;
+            height:auto;
+            background-color: #005950;
             color: white;
             padding: 0;
+            border-top: solid 5px;
+            border-color: #002925;
+        }
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        a:active {
+            text-decoration: underline;
+            color: white;
+        }
+        button{
+            border: 0;
+            border-radius: 3px;
+            background-color: #02ba92;
+        }
+        button:hover{
+            background-color: #61ab9b;
         }
     </style>
     <title>Document</title>
 </head>
 <body>
     <div class="header">
-        <img class="icon" src="" alt="Picture here">
-        <h1 class="Title" style="color:white;">NAMEAP IZHFfidfnodsyj3jj38il;gjefghijlkghkudgki57uhnuj</h1>
-        <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis nemo enim odio provident tempore quibusdam ut nobis asperiores cum nihil. Placeat porro et ut tempora aliquam vero voluptas modi. Velit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores tempora, quisquam deleniti hic veniam iste natus maiores delectus fuga ex incidunt accusantium nobis! Numquam dolores eaque dolore dolorem temporibus sapiente?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae eum facilis amet accusantium hic ipsa cum repudiandae, cupiditate laboriosam officiis quidem neque, alias, autem quae in. Iure earum possimus repudiandae?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo itaque, consequuntur voluptatum nesciunt id nisi aut mollitia ut adipisci qui, deserunt unde reiciendis ullam corrupti recusandae eum rem iusto quas.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores ipsa qui sunt maiores libero repellendus labore aspernatur, eligendi soluta quam maxime, veniam accusantium vitae saepe incidunt facere blanditiis optio!
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eligendi voluptatibus velit rerum cupiditate eum rem odit nulla? Veritatis, odio. Blanditiis ea quis id odit atque quidem eum assumenda nam?
-        </p>
+        <center>
+            <img class="icon" src="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png" alt="Picture here">
+            <h1 style="color:white;">Pizza Burger</h1>
+        </center>
+        <p class="info">Located in Senayan, Pizza Burger hits their guests with an interesting fusion between American food and Italian food. Established in 2019, this pays homage to the golden era of diners, adding its own twist.      </p>
     </div>
     <h2 style="text-align: center; font-size: xx-large; font-weight: bold;" >Our signature menu</h2>
     <div class="Signatures">
         <center>
-            <button class="Signatureselection"><img src="" alt="Test"><p>Test</p></button>
-            <button class="Signatureselection" id="Redirect"><img src="" alt="Test"><p>Test</p></button>
-            <button class="Signatureselection"><img src="" alt="Test"><p>Test</p></button>
+            <a href="Pizza Page.html">
+            <button class="Signatureselection"><img src="Pepperoni Pizza.jpg" style="height: 350px; width:350px;">
+                <p style="font-weight: bolder;font-size: x-large;">Pepperoni pizza</p>
+            </button>
+            </a>
+            <a href="burgerpizzapage.html">
+                <button class="Signatureselection"><img src="Cheese-and-Pepperoni-Pizza-Burger1.webp" style="height: 350px; width:350px;"><p style="font-weight: bolder;font-size: x-large;">Beef Pizza Burger</p></button>
+            </a>
+            <a>
+                <button class="Signatureselection"><img src="Cheese-and-Pepperoni-Pizza-Burger1.webp" style="height: 350px; width:350px;"><p style="font-weight: bolder;font-size: x-large;">Test</p></button>
+            </a>
         </center>
     </div>
-    
-    <div class="Menu">
+    <center>
+        <p style="font-weight: bolder; font-size: xx-large; background-color: #005950; color: white; padding:10px;">Menu</p>
+    </center>
+    <div style="padding: 0;">
+        <img src="collage.png" style="float: left; height: 650px; margin-left: 70px;">
         <div style="float:right; width: 30%;">
         <h3>Drinks</h3>
         <ul type="None">
@@ -118,16 +155,18 @@
             <li>Hawaiian pizza</li>
             <li>Hut pizza</li>
             <li>Italian pizza</li>
-            <li>Skeebede piza</li>
         </ul>
         <h3>Burger</h3>
         <ul type="None">
             <li>Big mac</li>
-            <li>Chizburger</li>
+            <li>Cheeseburger</li>
             <li>Filet-o-fish</li>
-            <li>Chimkin burg</li>
-            <li>Crabby patty</li>
-            <li>Burgyat</li>
+        </ul>
+        <h3>Pizza Burger</h3>
+        <ul type="None">
+            <li>Beef pizza burger</li>
+            <li>Chicken pizza burger</li>
+            <li>Cheese pizza burger</li>
         </ul>
         <h3>Desert</h3>
         <ul type="None">
@@ -137,13 +176,18 @@
         </div>
     </div>
      <div class="foot">
-        <div style="width:100%; height:10px;"><p style="color: white; margin:10px;">Name -  Fx Sudirman - Jl. Jenderal Sudirman</p></div>
-        <div style="margin-top: 150px; margin-left: 65%;">
-            <img src="https://img.icons8.com/?size=48&id=13963&format=png"> <a>Twitter</a>
-            <img src="https://img.icons8.com/?size=48&id=32323&format=png"> <a>Instagram</a>
-            <img src="https://img.icons8.com/?size=48&id=13912&format=png"> <a>Facebook</a>
-            <img src="https://img.icons8.com/?size=48&id=16713&format=png"> <a>081234123412</a>
-        </div>
+        <p style="color: white; margin:10px; font-size: larger;"><b>Name -  Fx Sudirman - Jl. Jenderal Sudirman</b></p>
+        <p style="color: white; margin:10px;">Telephone: 081234123412</p>
+        <p style="color: white; margin:10px;">Email: pizzaburger@pizzaburger.com</p>
+        <p style="color: white; margin:10px;">Fax: (+6221) 12341234</p>
+
+        
+        <a style="float:right; margin: 5px;" href="x.com">Twitter</a><img src="https://img.icons8.com/?size=48&id=13963&format=png" style="width:20px;height:20px;float:right;"> 
+        <a style="float:right;margin: 5px;" href="instagram.com">Instagram</a><img src="https://img.icons8.com/?size=48&id=32323&format=png" style="width:20px;height:20px;float:right;"> 
+        <a style="float:right;margin: 5px;" href="facebook.com">Facebook</a><img src="https://img.icons8.com/?size=48&id=13912&format=png" style="width:20px;height:20px;float:right;">
+        <a style="float:right;margin: 5px;">081234123412</a><img src="https://img.icons8.com/?size=48&id=16713&format=png" style="width:20px;height:20px;float:right;">
+
+        <p style="color: white; float: right; margin-right: 15%;">© 2024 pizzaburger.com | All rights reserved</p>
     </div>
 </body>
 </html>
